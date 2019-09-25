@@ -5,9 +5,10 @@ services:
     volumes:
       - ./server:/src
     working_dir: /src
-    # env_file: server.env
+    command: npm start
+    env_file: server.env
   db:
     image: mongo
     volumes:
       - ./mongo-db:/data/db
-    # env_file: db.env
+    env_file: db.env
