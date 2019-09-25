@@ -7,6 +7,8 @@ services:
     working_dir: /src
     command: npm start
     env_file: server.env
+    ports:
+      - "1337:1337"
   db:
     image: mongo
     volumes:
