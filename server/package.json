@@ -28,16 +28,13 @@
     "strapi-plugin-users-permissions": "3.0.0-beta.16.5",
     "strapi-plugin-email": "3.0.0-beta.16.5",
     "strapi-plugin-upload": "3.0.0-beta.16.5",
-    "strapi-hook-bookshelf": "3.0.0-beta.16.5",
-    "strapi-hook-knex": "3.0.0-beta.16.5",
-    "knex": "latest",
-    "pg": "latest"
+    "strapi-hook-mongoose": "3.0.0-beta.16.5"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "1a663785-c7aa-4ee5-b688-a4b4abac96d7"
+    "uuid": "487b02e3-b8f7-4ed2-ac90-65aa2bf692eb"
   },
   "engines": {
     "node": ">=10.0.0",

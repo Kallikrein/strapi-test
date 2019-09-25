@@ -2,16 +2,18 @@
   "defaultConnection": "default",
   "connections": {
     "default": {
-      "connector": "strapi-hook-bookshelf",
+      "connector": "strapi-hook-mongoose",
       "settings": {
-        "client": "postgres",
-        "database": "server",
-        "host": "127.0.0.1",
-        "port": 5432,
-        "username": "",
-        "password": ""
+        "database": "db",
+        "host": "db",
+        "srv": false,
+        "port": 27017,
+        "username": "bobby",
+        "password": "michot"
       },
-      "options": {}
+      "options": {
+        "authenticationDatabase": ""
+      }
     }
   }
 }
