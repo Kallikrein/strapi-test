@@ -6,11 +6,16 @@ services:
       - ./server:/src
     working_dir: /src
     command: npm run develop
-    env_file: server.env
+    environment:
+      - DATABASE_HOST=db
+      - DATABASE_USERNAME=$DB_USER
+      - DATABASE_PASSWORD=$DB_PASSWORD
     ports:
       - "1337:1337"
   db:
     image: mongo
     volumes:
       - ./mongo-db:/data/db
-    env_file: db.env
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=$DB_USER
+      - MONGO_INITDB_ROOT_PASSWORD=$DB_PASSWORD
